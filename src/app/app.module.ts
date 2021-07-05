@@ -12,6 +12,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSelectModule } from '@angular/material/select';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -45,6 +46,7 @@ import { ContentComponent } from './home/content/content.component';
     MatTabsModule,
     MatProgressBarModule,
     MatSelectModule,
+    MatProgressSpinnerModule,
     MatGridListModule
   ],
   entryComponents: [

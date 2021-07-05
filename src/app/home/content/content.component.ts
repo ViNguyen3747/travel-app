@@ -18,7 +18,9 @@ export class ContentComponent implements OnInit {
                 this.place = data.place;                
                 console.log(this.place);
                 this.photoService.getPhotos(this.place.name, this.place.geoCode.latitude, this.place.geoCode.longitude).subscribe({
-                  next: data => this.getPhotoUrl(data)
+                  next: data => {
+                    this.getPhotoUrl(data);
+                  }
                 });
               });
              };
@@ -28,8 +30,8 @@ export class ContentComponent implements OnInit {
 
   getPhotoUrl(photos: IFlickers[]) {
     photos.forEach(photo => {
-      this.photoUrls.push('https://live.staticflickr.com/' + photo.id + '/' + photo.id + '_' + photo.secret + '_w.jpg');
-    })
+      this.photoUrls.push('https://live.staticflickr.com/' + photo.id + '/' + photo.id + '_' + photo.secret + '_w.jpg'); 
+    })      
     console.log(this.photoUrls);
   }
   close() {

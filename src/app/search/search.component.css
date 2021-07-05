@@ -5,10 +5,7 @@ mat-form-field {
     width: 250px;
     background-color: rgba(240, 255, 255, 0.712);
     border-radius: 5px;
-
 }
-
-
 
 mat-option {
     background-color: rgba(241, 187, 125, 0.329);
@@ -18,7 +15,7 @@ mat-option {
 #search {    
     font-size: larger;
     padding: 20px;   
-    background-image: url('/assets/background.jpg');
+    background-image: url('src/background.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -45,5 +42,6 @@ button {
 }
 
 span {
-    font-size: 25px;   
+    font-size: 30px;
+    letter-spacing: 3px; 
 }

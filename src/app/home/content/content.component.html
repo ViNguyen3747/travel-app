@@ -2,11 +2,15 @@
 <h1 mat-dialog-title> {{ place.name }}</h1>
 <mat-dialog-content>
     <div class="tags">
-        <span *ngFor="let tag of place.tags">#{{ tag }}</span>
+        <span *ngFor="let tag of place.tags">#{{ tag }}&nbsp;</span>
     </div>
-    <div class="images">
-        <img *ngFor="let photo of photoUrls" [src]="photo">
-    </div>
+    <mat-spinner *ngIf="photoUrls.length==1;else showImages" color="accent"></mat-spinner>
+    <ng-template #showImages>
+        <div><a href="https://www.flickr.com/">All photos provided by Flickr</a></div>
+        <div class="images">
+            <img *ngFor="let photo of photoUrls" [src]="photo">
+        </div>
+    </ng-template>
 </mat-dialog-content>
 <mat-dialog-actions>
     <button mat-raised-button (click)="close()">Close</button>

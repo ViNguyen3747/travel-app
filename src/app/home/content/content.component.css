@@ -7,13 +7,19 @@ h1 {
     color: rgba(250, 166, 87, 0.658);
     font-family: 'Marck Script', cursive;
     text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 5px
 }
 .dialog {
     width: fit-content;
+    font-family: 'Marck Script', cursive;
 }
+
 .tags {
     display: flex;
     flex-flow: row wrap;
+    font-size: larger;
+    padding-bottom: 10px;
 }
 
 .images {
@@ -29,4 +35,9 @@ img {
     width: 100% !important;
     height: auto !important;
     padding-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
