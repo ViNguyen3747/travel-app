@@ -1,0 +1,32 @@
+button {
+    background-color: rgba(250, 166, 87, 0.658);
+    color: white;
+}
+
+h1 {
+    color: rgba(250, 166, 87, 0.658);
+    font-family: 'Marck Script', cursive;
+    text-transform: uppercase;
+}
+.dialog {
+    width: fit-content;
+}
+.tags {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.images {
+    line-height: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap:   5px;
+    -moz-column-count:    3;
+    -moz-column-gap:      5px;
+    column-count:         3;
+    column-gap:           5px;
+}
+img {
+    width: 100% !important;
+    height: auto !important;
+    padding-bottom: 5px;
+}

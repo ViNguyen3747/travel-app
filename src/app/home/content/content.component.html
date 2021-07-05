@@ -1,0 +1,23 @@
+<div *ngIf="data.success; else fail" class="dialog">
+<h1 mat-dialog-title> {{ place.name }}</h1>
+<mat-dialog-content>
+    <div class="tags">
+        <span *ngFor="let tag of place.tags">#{{ tag }}</span>
+    </div>
+    <div class="images">
+        <img *ngFor="let photo of photoUrls" [src]="photo">
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-raised-button (click)="close()">Close</button>
+</mat-dialog-actions>
+</div>
+
+<ng-template #fail>
+    <mat-dialog-content>Sorry, I couldn't retrieve data from your search location :((((
+        <div>Please try another city</div>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-raised-button (click)="close()">Close</button>
+    </mat-dialog-actions>
+</ng-template>

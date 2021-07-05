@@ -1,0 +1,33 @@
+<div id="search">
+  <div id="header">
+    <div id="title" >
+      <span>FOLLOW YOUR STEP 🧳 </span>
+    </div>
+    <a href="https://linkedin.com/in/thi-kieu-vi-nguyen-0894a919a">My Linkedin</a>
+  </div>
+  <form [formGroup]="locationFormGroup">  
+    <mat-form-field color="accent">
+      <mat-label>City</mat-label>
+      <mat-select formControlName="city">       
+        <mat-option value="Bangalore, India">Bangalore, India</mat-option>
+        <mat-option value="Barcelona, Spain">Barcelona, Spain</mat-option>
+        <mat-option value="Berlin, Germany">Berlin, Germany</mat-option>
+        <mat-option value="Dallas, USA">Dallas, USA</mat-option>
+        <mat-option value="New York, USA">New York, USA</mat-option>
+        <mat-option value="San Francisco, USA">San Francisco, USA</mat-option>
+        <mat-option value="Paris, France">Paris, France</mat-option>
+        <mat-option value="London, GB">London, GB</mat-option>
+      </mat-select>
+      </mat-form-field>
+    <mat-form-field color="accent">
+      <mat-label>Categories</mat-label>
+      <mat-select formControlName="categories">       
+        <mat-option value="SIGHTS">SIGHTS</mat-option>
+        <mat-option value="NIGHTLIFE">NIGHTLIFE</mat-option>
+        <mat-option value="RESTAURANT">RESTAURANT</mat-option>
+        <mat-option value="SHOPPING">SHOPPING</mat-option>
+      </mat-select>
+    </mat-form-field>
+  <button mat-raised-button (click)='findLatLon()'>Search</button>
+  </form>      
+</div>

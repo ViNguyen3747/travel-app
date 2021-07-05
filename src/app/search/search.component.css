@@ -1,0 +1,49 @@
+mat-form-field {
+    padding: 15px;
+    padding-bottom: 20px;
+    margin: 10px;
+    width: 250px;
+    background-color: rgba(240, 255, 255, 0.712);
+    border-radius: 5px;
+
+}
+
+
+
+mat-option {
+    background-color: rgba(241, 187, 125, 0.329);
+    color: rgb(172, 83, 0);
+}
+
+#search {    
+    font-size: larger;
+    padding: 20px;   
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#header {
+    font-family: 'Marck Script', cursive;   
+    padding: 10px;
+    color: white;
+ }
+ 
+#title {
+    font-size:  20px;
+    margin-bottom: 10px;
+}
+
+#header a {
+    float: right;
+    padding-top: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background-color: rgba(240, 255, 255, 0.712);
+}
+
+span {
+    font-size: 25px;   
+}
