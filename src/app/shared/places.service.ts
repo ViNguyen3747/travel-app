@@ -9,12 +9,11 @@ import { IToken, IPlace } from './interface';
 })
 export class PlacesService {
   private amadeusAPI = 'https://test.api.amadeus.com/v1/reference-data/locations/pois?';
-  private  APIkey = 'your-api-key';
   private tokenURL = "https://test.api.amadeus.com/v1/security/oauth2/token";
   constructor(private http: HttpClient) { }
 
   getToken(): Observable<string>{
-    let body = "grant_type=client_credentials&client_id=<your-client-id>&client_secret=<your-client-secret>";
+    let body = "grant_type=client_credentials&client_id=XqUdTwscLEweArGesKWvKO875oTKaz5c&client_secret=SiWZQo1LeOA7vKFT";
     let headers = new HttpHeaders({
       'Content-Type':  'application/x-www-form-urlencoded'
     })

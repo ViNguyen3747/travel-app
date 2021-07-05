@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ISearch } from '../shared/interface';
-import { FindLocationService } from '../shared/find-location.service';
+import { LatLonService } from '../shared/lat-lon.service';
 import { ILocation } from '../shared/interface';
 @Component({
   selector: 'app-search',
@@ -18,7 +18,7 @@ export class SearchComponent implements OnInit {
     lon: -0.1257,
     categories: 'SIGHTS'
   };
-  constructor(private _formBuilder: FormBuilder, private mapService: FindLocationService) { }
+  constructor(private _formBuilder: FormBuilder, private mapService: LatLonService) { }
 
   ngOnInit(): void {
     this.locationFormGroup = this._formBuilder.group({
