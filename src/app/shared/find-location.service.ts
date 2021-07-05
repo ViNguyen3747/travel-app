@@ -9,7 +9,7 @@ import { ILocation } from './interface';
 })
 export class FindLocationService {
     private openWeatherAPI = 'http://api.openweathermap.org/geo/1.0/direct?';
-    private  APIkey = '27cc0f9e54d73d8e67bfafb8beef78e4';
+    private  APIkey = 'your-api-key';
   constructor(private http: HttpClient) { }
 
   getLocation(name: string): Observable<ILocation>{
