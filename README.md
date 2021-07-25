@@ -7,4 +7,4 @@
 
 ![Screenshot](screenshot2.png?raw=true "Screenshot")
 
-## Credits
+<!-- ## Credits -->
