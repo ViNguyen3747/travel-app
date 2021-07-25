@@ -13,7 +13,7 @@ export class PlacesService {
   constructor(private http: HttpClient) { }
 
   getToken(): Observable<string>{
-    let body = "grant_type=client_credentials&client_id=XqUdTwscLEweArGesKWvKO875oTKaz5c&client_secret=SiWZQo1LeOA7vKFT";
+    let body = "grant_type=client_credentials&client_id=<your_API-Key>&client_secret=<Your-Secret-ID>";
     let headers = new HttpHeaders({
       'Content-Type':  'application/x-www-form-urlencoded'
     })
