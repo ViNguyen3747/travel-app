@@ -47,7 +47,7 @@ import { ContentComponent } from './home/content/content.component';
     MatProgressBarModule,
     MatSelectModule,
     MatProgressSpinnerModule,
-    MatGridListModule
+    MatGridListModule,
   ],
   entryComponents: [
     ContentComponent
